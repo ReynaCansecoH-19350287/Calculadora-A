@@ -14,22 +14,22 @@ function App() {
       <td> 
         <button 
         type= "button"
-        className='btn btn-primary'> C </button>
+        className='btn btn-primary w-75'> C </button>
       </td>
       <td>
         <button 
         type= "button"
-        className='btn btn-primary'> / </button>
+        className='btn btn-primary w-75'> / </button>
       </td>
       <td> 
         <button 
         type= "button"
-        className='btn btn-primary'> * </button>          
+        className='btn btn-primary w-75'> * </button>          
       </td>
       <td> 
         <button 
         type= "button"
-        className='btn btn-primary'> - </button>  
+        className='btn btn-primary w-75'> - </button>  
       </td>
       </tr>
       {/* Third row */}
@@ -37,23 +37,25 @@ function App() {
       <td>
         <button 
         type= "button"
-        className='btn btn-primary'> 7 </button>
+        className='btn btn-primary w-75'> 7 </button>
       </td>
       <td>
         <button 
         type= "button"
-        className='btn btn-primary'> 8 </button>
+        className='btn btn-primary w-75'> 8 </button>
       </td>
       <td> 
         <button 
         type= "button"
-        className='btn btn-primary'> 9 </button>
+        className='btn btn-primary w-75'> 9 </button>
       </td>
       <td 
       rowSpan={2}>
         <button 
         type= "button"
-        className='btn btn-primary'> + </button>            
+        className='btn btn-primary w-75'
+        style={{height: "80px"}}
+        > + </button>            
       </td>
       </tr>
       {/* Fourth row */}
@@ -61,17 +63,17 @@ function App() {
       <td> 
         <button 
         type= "button"
-        className='btn btn-primary'> 4 </button>   
+        className='btn btn-primary w-75'> 4 </button>   
       </td>
       <td> 
         <button 
         type= "button"
-        className='btn btn-primary'> 5 </button>            
+        className='btn btn-primary w-75'> 5 </button>            
       </td>
       <td>
         <button 
         type= "button"
-        className='btn btn-primary'> 6 </button>
+        className='btn btn-primary w-75'> 6 </button>
       </td>
       </tr>
       {/* Firth row */}
@@ -79,22 +81,24 @@ function App() {
       <td> 
         <button 
         type= "button"
-        className='btn btn-primary'> 1 </button> 
+        className='btn btn-primary w-75'> 1 </button> 
       </td>
       <td>
         <button 
         type= "button"
-        className='btn btn-primary'> 2 </button>
+        className='btn btn-primary w-75'> 2 </button>
       </td>
       <td>
         <button 
         type= "button"
-        className='btn btn-primary'> 3 </button>
+        className='btn btn-primary w-75'> 3 </button>
       </td>
       <td rowSpan={2}>
         <button 
         type= "button"
-        className='btn btn-primary'> = </button>
+        className='btn btn-primary w-75'
+        style={{height: "80px"}}
+        > = </button>
       </td>
       </tr>
       {/* Sixth row */}
@@ -102,12 +106,14 @@ function App() {
       <td colSpan={2}>
         <button 
         type= "button"
-        className='btn btn-primary'> 0 </button>
+        className='btn btn-primary'
+        style={{width: "175px"}
+        }> 0 </button>
       </td>
       <td>
         <button 
         type= "button"
-        className='btn btn-primary'> . </button>
+        className='btn btn-primary w-75'> . </button>
         </td>
         </tr>
       </table>
