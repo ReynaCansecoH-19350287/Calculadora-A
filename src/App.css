@@ -1,5 +1,9 @@
+.app {
+  text-align: center;
+}
 table{
-  width: 400px
+  width: 400px;
+  margin: auto
 }
 
 td {
@@ -9,4 +13,5 @@ td {
 
 button {
   margin-top: 5px;
+  box-shadow: 5px 5px #888888;
 }
