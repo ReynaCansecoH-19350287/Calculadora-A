@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css'
+import Button from './components/Button';
 
 const buttonsClasses = 'btn btn-primary w-75';
 
@@ -58,6 +59,15 @@ function App() {
         case '+':
           setDigital((a + b).toString());
           break;
+          case '-':
+          setDigital((a - b).toString());
+          break;
+          case '*':
+          setDigital((a * b).toString());
+          break;
+          case '/':
+          setDigital((a / b).toString());
+          break;
       
         default:
           break;
@@ -92,16 +102,22 @@ function App() {
             <td>
               <button 
               type= "button" 
+              value = "/"
+              onClick ={(e) => handleOperationButtonClick(e)}
               className={buttonsClasses}> / </button>
             </td>
             <td>
               <button 
               type= "button" 
+              value = "*"
+              onClick ={(e) => handleOperationButtonClick(e)}
               className={buttonsClasses}> * </button>
             </td>
             <td>
               <button 
               type= "button" 
+              value = "-"
+              onClick ={(e) => handleOperationButtonClick(e)}
               className={buttonsClasses}> - </button>
             </td>
           </tr>
@@ -116,13 +132,18 @@ function App() {
               onClick={(e) => handleButtonClick(e)}
               > 7 </button>
             </td>
-            <td>
-              <button 
+            <td rowSpan={1}>
+            {/* <button 
               type= "button" 
               className={buttonsClasses}
               value="8"
               onClick={(e) => handleButtonClick(e)}
-              > 8 </button>
+              style={{}}
+              > 8 </button> */}
+              <Button 
+              style={buttonsClasses} 
+              handleClick={handleButtonClick}
+              />
             </td>
             <td>
               <button 
